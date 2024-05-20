@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snappy Splash Booking System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="side-menu">
+            <div class="logo">
+                <a href="#"><span>Snappy</span>Splash </a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign-Up <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#login">Book Now</a></li>
+                        <li><a href="#">Business Registration</a></li>
+                    </ul>
+                </li>                
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Faq</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Rate Our Platform</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <section class="home-section hidden">
+                <div class="container">
+                    <h1>Snappy Splash Booking</h1>             
+                        <h3>REVOLUTIONIZING CAR WASH SCHEDULING FOR CLIENTS AND BUSINESSES​</h3> 
+                        <div class="intro">
+                            <p>Welcome to Snappy Splash Booking System. Introducing an
+                                innovative car wash booking system designed to revolutionize the
+                                industry by tackling scheduling<center>inefficiencies and significantly
+                                reducing wait times.Discover the most convenient way to find nearby car washes and
+                                schedule your next wash.</center></p>
+                        </div>                  
+                </div>
+            </section>
+
+            <section class="about section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Us</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <p>Originating from a township where car wash scheduling is
+                                        hit-or-miss, Our mission is to offer seamless solution that allows
+                                        customers to effortlessly discover local car washes, explore their
+                                        services and pricing, and conveniently book appointments during
+                                        available time slots. At Snappy Splash,our obession is with clean rides and happy customers.Our platform 
+                                        connects car wash enthusiasts with top-notch wash services.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>                      
+                    </div>
+                </div>
+                <hr>
+                  <div class="achievements">
+                            <h1>Achievements</h1>
+                            <div class="row">
+                                <div class="col">
+                                  <div class="card">
+                                    <h3>1500</h3>
+                                    <div>
+                                      <img src="images/achievements/happy customer.png" />
+                                    </div>
+                                    <p><b>Happy Customers</b></p>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <h3>20 +</h3>
+                                    <div><img src="images/achievements/partnership.jpg" /></div>
+                                    <p><b>Partnered Businesses</b></p>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <h3>65%</h3>
+                                    <div>
+                                      <img src="images/achievements/satisfactory.png" />
+                                    </div>
+                                    <p><b>Satisfaction Rate</b></p>
+                                  </div>
+                                </div>
+                            </div>
+                </div>
+            </section>
+
+            <section class="booking-history section hidden">
+                <div class="section-title">
+                    <h2>Bookings</h2>
+                </div>
+                <ul class="history-list">
+                    <li>Booking 1: Date, Time, Location</li>
+                    <li>Booking 2: Date, Time, Location</li>
+                    <li>Booking 3: Date, Time, Location</li>
+                    
+                </ul>
+                <div class="map-container">
+                    <div class="search-bar">
+                        <input type="text" id="location-search" placeholder="Enter location to find nearby car washes">
+                        <button id="search-btn">Search</button>
+                    </div>
+                    <div id="map"></div>
+                </div>
+            </section>
+
+            <section id="login" class="booking section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Book Now</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="booking-content padd-15">
+                            <p>To book a car wash, please log in or sign up.</p>
+                            <form action="#" method="post">
+                                <div class="form-item">
+                                    <input type="text" name="username" placeholder="Username">
+                                </div>
+                                <div class="form-item">
+                                    <input type="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="form-item">
+                                    <a href="#forgot-password">Forgot Password?</a>
+                                </div>
+                                <div class="form-item">
+                                    <button type="submit" class="btn">Login</button> <a href="#signup" class="btn">Sign Up</a>
+                                </div>
+                            </form>                         
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+            <section id="signup" class="signup section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Sign Up</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="signup-content padd-15">
+                            <form id="signup-form">
+                                <div class="form-item">
+                                    <input type="text" id="name" name="name" placeholder="Name">
+                                </div>
+                                <div class="form-item">
+                                    <input type="text" id="surname" name="surname" placeholder="Surname">
+                                </div>
+                                <div class="form-item">
+                                    <input type="text" id="username" name="username" placeholder="Username">
+                                </div>
+                                <div class="form-item">
+                                    <input type="email" id="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-item">
+                                    <input type="text" id="cell" name="cell" placeholder="Cell Number">
+                                </div>
+                                <div class="form-item">
+                                    <input type="password" id="new-password" name="new-password" placeholder="New Password">
+                                </div>
+                                <div class="form-item">
+                                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-item">
+                                    <button type="submit" class="btn">Sign Up</button>
+                                </div>
+                            </form>
+                            <div id="signup-message" class="hidden"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="forgot-password" class="forgot-password section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Reset Password</h2>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="forgot-password-content padd-15">
+                            <form action="#" method="post">
+                                <div class="form-item">
+                                    <input type="text" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-item">
+                                    <button type="submit" class="btn">Reset Password</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>      
+                </div>
+            </section>
+
+            <section class="faq section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>FAQ</h2>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="faq-content padd-15">
+                            <div class="row">
+                                <div class="faq-text padd-15">
+                                <p>Please scroll down for responses to most of the questions you may have. And if you do not find your answer please send
+                                    us an email via the <a href="">CONTACT</a> section.</p>   
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>            
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>How do I find nearby car washes?</summary>
+                        <div>
+                            By simply entering your location, and we'll show you the closest car washes.
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary>Can I schedule appointments online?</summary>
+                        <div>
+                            Absolutely! Book your car's pampering session online in just a few clicks. It's that easy!
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary>How can businesses join the platform?</summary>
+                        <div>
+                            Car wash businesses can register easily to boost their visibility and attract more customers.
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary>What services do car washes offer?</summary>
+                        <div>
+                            They offer from basic washes to deluxe detailing, all our car washes provide a range of services to suit every car's needs.
+                        </div>
+                    </details>
+            
+                    <details>
+                        <summary>Are the prices competitive?</summary>
+                        <div>
+                            Our platform ensures competitive pricing, so you get the best value for top-notch car care services.
+                        </div>
+                    </details>
+                </div>
+            </section>
+                       
+            <section class="contact section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Us</h2>
+                        </div>
+                    </div>             
+                </div>
+                <div class="section-title padd-15">
+                    <h3 class="contact-title padd-15">We would love to hear from you</h3>
+                    <h4 class="contact-sub-title padd-15">WE'RE AT YOUR SERVICE</h4>
+                </div>            
+                <div class="row">
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call Us On</h4>
+                        <p>+27 68 470 3346</p>       
+                    </div>
+
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>info@snappy_spash.com</p>   
+                    </div>                    
+                </div>
+                <h3 class="contact-title padd-15">SEND US AN EMAIL</h3>
+                <h4 class="contact-sub-title padd-15">WE'RE VERY RESPONSIVE</h4>
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                             </div>
+
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>                                   
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>  
+                        </div>
+                            <div class="row">
+                                 <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>                                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="review section hidden">
+                <form id="review-form">
+                    <div class="review-question">
+                        <label for="question1">1. How was the overall experience?</label>
+                        <textarea id="question1" name="question1"></textarea>
+                    </div>
+                    <div class="review-question">
+                        <label for="question2">2. How was the quality of the service?</label>
+                        <textarea id="question2" name="question2"></textarea>
+                    </div>
+                    <div class="review-question">
+                        <label for="question3">3. Was the staff friendly and helpful?</label>
+                        <textarea id="question3" name="question3"></textarea>
+                    </div>
+                    <div class="review-question">
+                        <label for="question4">4. Was the pricing reasonable?</label>
+                        <textarea id="question4" name="question4"></textarea>
+                    </div>
+                    <div class="review-question">
+                        <label for="question5">5. Would you recommend this service to others?</label>
+                        <textarea id="question5" name="question5"></textarea>
+                    </div>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC34oStVmbn4mA0G-jV3rcDpLjc_UY8MVo&loading=async&callback=initMap">
+</script> 
+</body>
+</html>
