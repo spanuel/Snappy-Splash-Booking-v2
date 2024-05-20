@@ -1,6 +1,6 @@
 function initMap() {
     // The location of the center point
-    var centerPoint = {lat: -34.397, lng: 150.644};
+    var centerPoint = {lat: -33.933248, lng: 18.460797};
     // The map, centered at the center point
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 8,
